@@ -523,7 +523,7 @@ sudo chmod +x /var/stratum/config/run.sh
 ' | sudo -E tee /etc/nginx/sites-available/$server_name.conf >/dev/null 2>&1
 	fi
 	sudo systemctl restart nginx.service
-	sudo systemctl reload php7.1-fpm.service
+	sudo systemctl reload php7.2-fpm.service
 	else
 	echo 'include /etc/nginx/blockuseragents.rules;
 	server {
@@ -606,7 +606,7 @@ sudo chmod +x /var/stratum/config/run.sh
     sudo ln -s /etc/nginx/sites-available/$server_name.conf /etc/nginx/sites-enabled/$server_name.conf
     sudo ln -s /var/web /var/www/$server_name/html
     sudo systemctl restart nginx.service
-	sudo systemctl reload php7.1-fpm.service
+	sudo systemctl reload php7.2-fpm.service
 	
     if [[ ("$ssl_install" == "y" || "$ssl_install" == "Y" || "$ssl_install" == "") ]]; then
     
@@ -727,7 +727,7 @@ sudo chmod +x /var/stratum/config/run.sh
 ' | sudo -E tee /etc/nginx/sites-available/$server_name.conf >/dev/null 2>&1
 	fi
 	sudo systemctl restart nginx.service
-	sudo systemctl reload php7.1-fpm.service
+	sudo systemctl reload php7.2-fpm.service
 	fi
     
     output " "
@@ -944,7 +944,7 @@ sudo chmod -R 644 /var/log/debug.log
 sudo chmod -R 775 /var/web/serverconfig.php
 sudo mv $HOME/yiimp/ $HOME/yiimp-install-only-do-not-run-commands-from-this-folder
 sudo systemctl restart nginx.service
-sudo systemctl reload php7.1-fpm.service
+sudo systemctl reload php7.2-fpm.service
 
 output " "
 output " "

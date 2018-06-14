@@ -17,6 +17,7 @@ Install script for yiimp on Ubuntu 17.10 : https://github.com/xavatar/yiimp_inst
 ## Install script for yiimp on Ubuntu 18.10
 
 USE THIS SCRIPT ON FRESH INSTALL UBUNTU 18.10 !
+NOT TESTED IN PROD !!!!!!!
 
 Connect on your VPS =>
 - adduser pool

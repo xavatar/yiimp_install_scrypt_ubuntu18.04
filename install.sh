@@ -35,7 +35,7 @@ displayErr() {
     read -e -p "Enter your Public IP for admin access (http://www.whatsmyip.org/) : " Public
     read -e -p "Install Fail2ban? [Y/n] : " install_fail2ban
     read -e -p "Install UFW and configure ports? [Y/n] : " UFW
-    read -e -p "Install LetsEncrypt SSL? IMPORTANT! You MUST have your domain name pointed to this server prior to running the script!! [Y/n]: " ssl_install
+    read -e -p "Install LetsEncrypt SSL? IMPORTANT! You MUST have your domain name pointed to this server prior to running the script!! [y/N]: " ssl_install
     
     output " "
     output "Updating system and installing required packages."
@@ -413,7 +413,7 @@ sudo chmod +x /var/stratum/config/run.sh
     sudo ln -s /etc/nginx/sites-available/$server_name.conf /etc/nginx/sites-enabled/$server_name.conf
     sudo ln -s /var/web /var/www/$server_name/html
     sudo systemctl restart nginx.service
-    if [[ ("$ssl_install" == "y" || "$ssl_install" == "Y" || "$ssl_install" == "") ]]; then
+    if [[ ("$ssl_install" == "y" || "$ssl_install" == "Y") ]]; then
     
     output " "
     output "Install LetsEncrypt and setting SSL"

@@ -134,6 +134,7 @@ default         0;
 	#Conf older Version of GCC
     sudo apt-get install -y libidn2-dev
     sudo apt-get install -y libpsl-dev
+	sudo apt-get install -y libnghttp2-dev
     sudo apt-get install -y gcc-5 g++-5
     sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
     sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 40 --slave /usr/bin/g++ g++ /usr/bin/g++-7

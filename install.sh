@@ -349,8 +349,9 @@ sudo chmod +x /var/stratum/config/run.sh
         location = /favicon.ico { access_log off; log_not_found off; }
         location = /robots.txt  { access_log off; log_not_found off; }
     
-        access_log off;
-        error_log  /var/log/nginx/'"${server_name}"'.app-error.log error;
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;
+
     
         # allow larger file uploads and longer script runtimes
  	client_body_buffer_size  50k;
@@ -445,8 +446,8 @@ sudo chmod +x /var/stratum/config/run.sh
             root /var/www/'"${server_name}"'/html/web;
             index index.php;
         
-            access_log /var/log/nginx/'"${server_name}"'.app-accress.log;
-            error_log  /var/log/nginx/'"${server_name}"'.app-error.log error;
+            access_log /var/log/nginx/'"${server_name}"'.app-access.log;
+            error_log  /var/log/nginx/'"${server_name}"'.app-error.log;
         
             # allow larger file uploads and longer script runtimes
  	client_body_buffer_size  50k;
@@ -550,8 +551,8 @@ sudo chmod +x /var/stratum/config/run.sh
         location = /favicon.ico { access_log off; log_not_found off; }
         location = /robots.txt  { access_log off; log_not_found off; }
     
-        access_log off;
-        error_log  /var/log/nginx/'"${server_name}"'.app-error.log error;
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;
     
         # allow larger file uploads and longer script runtimes
  	client_body_buffer_size  50k;
@@ -649,8 +650,8 @@ sudo chmod +x /var/stratum/config/run.sh
             root /var/www/'"${server_name}"'/html/web;
             index index.php;
         
-            access_log /var/log/nginx/'"${server_name}"'.app-accress.log;
-            error_log  /var/log/nginx/'"${server_name}"'.app-error.log error;
+            access_log /var/log/nginx/'"${server_name}"'.app-access.log;
+            error_log  /var/log/nginx/'"${server_name}"'.app-error.log;
         
             # allow larger file uploads and longer script runtimes
  	client_body_buffer_size  50k;

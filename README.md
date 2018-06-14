@@ -1,4 +1,4 @@
-# Yiimp_install_scrypt_ubuntu17.10 (update June 14, 2018)
+# Yiimp_install_scrypt_ubuntu18.10 (update June 14, 2018)
 
 
 Discord : https://discord.gg/zcCXjkQ
@@ -8,21 +8,22 @@ TUTO Youtube : https://www.youtube.com/watch?v=vdBCw6_cyig
 Official Yiimp (used in this script for Yiimp Installation): https://github.com/tpruvot/yiimp
 
 Install script for yiimp on Ubuntu 16.04 : https://github.com/xavatar/yiimp_install_scrypt
+Install script for yiimp on Ubuntu 17.10 : https://github.com/xavatar/yiimp_install_scrypt_ubuntu17.10
 
 
 ***********************************
 
-## Install script for yiimp on Ubuntu 17.10
+## Install script for yiimp on Ubuntu 18.10
 
-USE THIS SCRIPT ON FRESH INSTALL UBUNTU 17.10 !
+USE THIS SCRIPT ON FRESH INSTALL UBUNTU 18.10 !
 
 Connect on your VPS =>
 - adduser pool
 - adduser pool sudo
 - su - pool
 - sudo apt-get -y install git
-- git clone https://github.com/xavatar/yiimp_install_scrypt_ubuntu17.10.git
-- cd yiimp_install_scrypt_ubuntu17.10/
+- git clone https://github.com/xavatar/yiimp_install_scrypt_ubuntu18.04.git
+- cd yiimp_install_scrypt_ubuntu18.04/
 - sudo bash install.sh (Do not run the script as root)
 - sudo bash screen-scrypt.sh (in tuto youtube, i launch the scrypt with root... it does not matter)
 - NOT MANDATORY => sudo bash screen-stratum.sh (CONFIGURE BEFORE START this script... add or remove algo you use).

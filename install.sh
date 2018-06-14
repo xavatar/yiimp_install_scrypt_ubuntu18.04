@@ -98,8 +98,8 @@ default         0;
     sleep 3
     
     sudo aptitude -y install php-fpm
-    sudo aptitude -y install php-opcache php php-common php-gd php-mysql php-imap php-cli php-cgi php-pear php-mcrypt mcrypt imagemagick libruby php-curl php-intl php-pspell php-recode php-sqlite3 php-tidy php-xmlrpc php-xsl memcached php-memcache php-imagick php-gettext php-zip php-mbstring
-	# dont find php-auth (see later)
+    sudo aptitude -y install php-opcache php php-common php-gd php-mysql php-imap php-cli php-cgi php-pear mcrypt imagemagick libruby php-curl php-intl php-pspell php-recode php-sqlite3 php-tidy php-xmlrpc php-xsl memcached php-memcache php-imagick php-gettext php-zip php-mbstring
+	# dont find  (see later) : php-mcrypt ; php-auth
     sudo phpenmod mcrypt
     sudo phpenmod mbstring
     sudo aptitude -y install libgmp3-dev

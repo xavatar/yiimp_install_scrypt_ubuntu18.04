@@ -616,7 +616,7 @@ sudo chmod +x /var/stratum/config/run.sh
     sudo systemctl restart nginx.service
 	sudo systemctl reload php7.2-fpm.service
 	
-    if [[ ("$ssl_install" == "y" || "$ssl_install" == "Y" || "$ssl_install" == "") ]]; then
+    if [[ ("$ssl_install" == "y" || "$ssl_install" == "Y") ]]; then
     
     output " "
     output "Install LetsEncrypt and setting SSL"

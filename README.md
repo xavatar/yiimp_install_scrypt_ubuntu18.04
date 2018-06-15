@@ -20,6 +20,8 @@ USE THIS SCRIPT ON FRESH INSTALL UBUNTU 18.10 !
 
 NOT TESTED IN PROD !!!!!!!
 
+Be careful with the new Yiimp install scripts. Many of the wallets do not compile on Ubuntu above 16.04. There are workarounds, but you have to know how to do it to compile the wallets.
+
 Connect on your VPS =>
 - adduser pool
 - adduser pool sudo
